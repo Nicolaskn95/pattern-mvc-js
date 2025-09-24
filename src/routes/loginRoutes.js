@@ -1,9 +1,9 @@
-import router from 'express';
-import LoginController from '../controller/loginController.js';
+import { Router } from "express";
+import LoginController from "../controller/loginController.js";
 
-const loginRoutes = router();
+const loginRoutes = Router();
 
-loginRoutes.get('/login', LoginController.getLogin);
-loginRoutes.get('/logged', LoginController.getIsLogged)
+loginRoutes.get("/login", LoginController.getLogin);
+loginRoutes.get("/logged", LoginController.getIsLogged);
 
 export default loginRoutes;
